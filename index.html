@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WEB222 Store</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+       
+
+        <nav>
+            <img id="logo" src="images/logo.png" alt="logo" />
+            <span id="slogan">Start your journey now!</span>
+        </nav>
+
+        <div id="bar">
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+
+        <h1 class="store">Skyline</h1>
+        <h2 class="store">Plan the best vacation for you!</h2>
+
+        <div id="subscribe">
+            <form
+                id="eform"
+                action="https://formspree.io/mqkaqrnk"
+                method="POST"
+                name="subscribe"
+            >
+                <label for="email">Sign up to receive our newsletter:</label>
+                <input
+                    name="email"
+                    id="email"
+                    placeholder="Your email address"
+                    type="email"
+                    size="50"
+                />
+                <button type="submit" id="btn">Submit</button>
+            </form>
+        </div>
+
+        <div id="pageDown"><img alt="arrow" src="images/down.png" /></div>
+
+        <div id="main">
+            <div class="category">
+                <ul>
+                    <li><strong>Choose your destination</strong></li>
+                    <li id="africa" class="cate"><a href="#main">Africa</a></li>
+                    <li id="asia" class="cate"><a href="#main">Asia</a></li>
+                    <li id="europe" class="cate"><a href="#main">Europe</a></li>
+                    <li id="oceania" class="cate">
+                        <a href="#mian">Oceania</a>
+                    </li>
+                    <li id="southamerica" class="cate">
+                        <a href="#mian">South America</a>
+                    </li>
+                    <li id="all" class="cate"><a href="#mian">SEE ALL</a></li>
+                </ul>
+            </div>
+            <div class="items">
+                <div id="sort">
+                    <span>Sort by: </span
+                    ><span id="a-z"><a href="#main"> A-Z</a> </span
+                    ><span id="lowPrice"
+                        ><a href="#main">| Price: low-high</a></span
+                    >
+                </div>
+
+                <div id="display"></div>
+            </div>
+        </div>
+
+        <footer>Name：Jianwen Yang Student#153169180</footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

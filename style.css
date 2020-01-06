@@ -1,0 +1,329 @@
+/** css for index */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: url(images/bkg2.jpg) no-repeat;
+
+    background-attachment: fixed;
+    background-color: rgb(200, 151, 240);
+    background-size: cover;
+}
+
+nav {
+    position: static;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+    height: 100%;
+}
+#slogan {
+    font-family: "Dancing Script", cursive;
+    margin: auto;
+    font-size: xx-large;
+    font-weight: bold;
+    animation-name: titleAni;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes titleAni {
+    0% {
+        color: rgba(139, 139, 139, 0.7);
+        transform: translateX(-180px);
+        font-size: x-large;
+    }
+    25% {
+        color: rgba(63, 63, 63, 0.95);
+        font-size: xx-large;
+    }
+    50% {
+        color: rgba(32, 32, 32, 0.9);
+        transform: translateX(180px);
+        font-size: x-large;
+    }
+
+    75% {
+        color: rgba(63, 63, 63, 0.95);
+        font-size: xx-large;
+    }
+    100% {
+        color: rgba(139, 139, 139, 0.7);
+        transform: translateX(-180px);
+        font-size: x-large;
+    }
+}
+
+#bar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 80%;
+    margin: 1% 10% 4% 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    font-family: "Cinzel", serif;
+    color: #18141b;
+}
+a:hover,
+a:active {
+    font-weight: bold;
+}
+h1 {
+    margin: 0 20% 0 40%;
+}
+h2 {
+    margin: 0 20% 0 30%;
+}
+.store {
+    font-family: "Homemade Apple", cursive;
+    text-shadow: 3px 3px 4px #969696;
+    animation-name: showStore;
+    animation-duration: 8s;
+    font-size: 2em;
+    color: rgba(79, 73, 87, 0.95);
+}
+
+@keyframes showStore {
+    0% {
+        color: rgba(78, 78, 78, 0.95);
+        text-shadow: -16px 15px 12px #969696;
+    }
+    50% {
+        color: rgba(62, 61, 63, 0.85);
+        text-shadow: 16px 15px 12px #97989b;
+    }
+    100% {
+        color: rgba(78, 78, 78, 0.95);
+        text-shadow: 3px 3px 4px #969696;
+    }
+}
+
+#main {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 3px 5px #a0a1a7;
+}
+#main .category {
+    flex: 1;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    height: 100vh;
+    overflow: hidden;
+}
+#main .category:hover {
+    overflow: auto;
+}
+#main .items {
+    flex: 3;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    height: 100vh;
+}
+#subscribe {
+    width: 100vw;
+    height: 16vw;
+}
+#eform {
+    padding: 0 30%;
+    margin: 4em auto;
+    width: 35%;
+    font-family: "Cinzel", serif;
+    text-align: left;
+    animation-name: subAni;
+    animation-duration: 4s;
+}
+@keyframes subAni {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#email {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 1px solid #333333;
+    line-height: 5vh;
+    height: 6vh;
+    margin: 0.5em auto;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+}
+#btn {
+    font-family: "Cinzel", serif;
+    width: 60px;
+    height: 35px;
+    background-color: rgba(172, 140, 199, 0);
+    border: 0.5px solid #a8a8a8;
+}
+#btn:hover,
+#btn:active {
+    background-color: rgba(172, 140, 199, 0.4);
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    padding: 2em 0;
+    font-family: "Cinzel", serif;
+    list-style: none;
+    margin: 0;
+
+    border: 1px #333333 dotted;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+}
+.cate:hover,
+.cate:active {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.items #sort {
+    font-family: "Cinzel", serif;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: flex-end;
+}
+#display {
+    width: 100%;
+    height: 95vh;
+    overflow: auto;
+}
+.oneItem {
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    border: 1px #333333 dotted;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.oneItem img {
+    width: 200px;
+    border-radius: 3px;
+}
+.oneItem .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.cName {
+    flex: 2;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: "Cinzel Decorative", cursive;
+}
+.duration {
+    flex: 1;
+    font-size: 1.5em;
+    font-family: "EB Garamond", serif;
+}
+.description {
+    flex: 2;
+    font-size: 1.2em;
+    font-family: "EB Garamond", serif;
+}
+.oPrice {
+    flex: 1;
+    font-size: 1em;
+    color: #777777;
+    font-family: "EB Garamond", serif;
+    text-decoration: line-through;
+}
+.price {
+    flex: 2;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: "EB Garamond", serif;
+    color: rgb(224, 48, 57);
+}
+.selected {
+    background: rgb(245, 244, 244);
+}
+#padeDown {
+    height: 25px;
+    width: 100%;
+}
+#pageDown img {
+    width: 25px;
+    height: 25px;
+    padding: 0 50%;
+    box-shadow: -2px -2px 5px #777777;
+}
+#pageDown img:hover,
+#pageDown img:active {
+    background-color: rgba(224, 224, 224, 0.5);
+}
+footer {
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 0.8em;
+    position: static;
+    width: 100%;
+    height: 5%;
+    background: rgba(255, 255, 255, 0.55);
+    margin: 2% 0 0 0;
+}
+
+/**css for form*/
+
+#form {
+    background: rgba(243, 243, 245, 0.9);
+    position: static;
+    width: 70vw;
+    height: 70vh;
+    margin: 5% 10% 8% 18%;
+    box-shadow: 3px 3px 8px #a0a1a7;
+    font-family: "Cinzel", serif;
+    font-size: 1em;
+}
+#fd {
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2px;
+    overflow: auto;
+}
+#fd input,
+#fd textarea,
+#fd select {
+    width: 90%;
+}
+
+#fd button {
+    margin: 10% 5% 5% 50%;
+    grid-column: 2/2;
+}
